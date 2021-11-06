@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Drone Business </title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header pull-left">
+                <a href="" class="navbar-brand">
+                    <span class="brand-logo"><img src="~/images/logo.png" width="150" height="150" alt="" /></span>
+                </a>
+            </div>
+            <div class="main-nav pull-right">
+                <div class="button_container toggle">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                </div>
+            </div>
+            <div class="overlay" id="overlay">
+                <nav class="overlay-menu">
+                    <ul>
+                        <li><a href="https://localhost:44383/Home/Index">Home</a></li>
+                        <li><a href="https://localhost:44383/Home/Studio">Studio</a></li>
+                        <li><a href="https://localhost:44383/Home/Projects">Projects</a></li>
+                        <li><a href="https://localhost:44383/Home/Project_Description">Project description</a></li>
+                        <li><a href="https://localhost:44383/Home/Contact">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    <!-- /container -->
+    </nav>
+    <!-- /Navigation -->
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3">
+                </div>
+                <div class="col-md-6 col-sm6 section-bg-color">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <h2>INFO</h2>
+                            <p>Address: 71 Fortune Drive, Irvine, CA 92618</p>
+                            <p>Phone: 212-333-4000</p>
+                            <p>Email: opticbirds@gmail.com</p>
+                        </div><!-- /col-sm-9 -->
+                    </div><!--/row-->
+                </div><!-- /col-sm-6 -->
+                <div class="col-md-3 col-sm-3 section-bg-color1">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <h3>Copyright 2021</h3>
+                            <p class="pull-right"><a href=""><img src="images/twitter.png" alt="" /></a></p>
+                            <p class="pull-right icons-f"><a href=""><img src="images/facebook.png" alt="" /></a></p>
+                        </div><!-- /col-sm-9 -->
+                    </div><!--/row-->
+                </div><!-- /col-sm-3 -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>
